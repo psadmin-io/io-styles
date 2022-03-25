@@ -20,78 +20,94 @@ To set the main theme for your system,
 
 ![BrandingOptions](./images/brandingoptions.png)
 
+## SQL for Refreshes
 
-## Orange
+Typically, the `IO_STYLE_859` is load into production but not used. During your refresh, you can use the following SQL to configure your new environment to use a theme. 
 
-![OrangeTheme](./images/orange.png)
+```sql
+
+```
+
+## Colors
+
+> I used https://colordesigner.io/ to help build the color schemes.
+
+### Orange
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #FF8100 | #FF5100 | #FFAA00  | #004757 |
 
+![OrangeTheme](./images/orange.png)
 
-## Red
-
-![RedTheme](./images/red.png)
+### Red
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #94090D | #5C0002 | #D40D12  | #1dfff9 |
 
-## Green
+![RedTheme](./images/red.png)
 
-![GreenTheme](./images/green.png)
+### Green
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #097609 | #075807 | #70AF1A  | #591aaf |
 
-## Purple
+![GreenTheme](./images/green.png)
 
-![PurpleTheme](./images/purple.png)
+### Purple
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #553285 | #36175E | #9768D1  | #a2d168 |
 
-## Blue
+![PurpleTheme](./images/purple.png)
 
-![BlueTheme](./images/blue.png)
+### Blue
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #0074D9 | #00448D | #7ABAF2  | #f2b27a |
 
-## Teal
+![BlueTheme](./images/blue.png)
 
-![TealTheme](./images/teal.png)
+### Teal
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #009798 | #227273 | #9DF3F4  | #f49e9d |
 
-## Yellow
+![TealTheme](./images/teal.png)
 
-![YellowTheme](./images/yellow.png)
+### Yellow
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #CCCC04 | #8d8d03 | #FFFF52  | #5252ff |
 
-## Brown
+![YellowTheme](./images/yellow.png)
 
-![BrownTheme](./images/brown.png)
+### Brown
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #A36F44 | #6B4732 | #F7DEB2  | #b2cbf7 |
 
-## Pink
+![BrownTheme](./images/brown.png)
 
-![PinkTheme](./images/pink.png)
+### Pink
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
 | #AA3366 | #552233 | #CC5599  | #55cc88 |
 
+![PinkTheme](./images/pink.png)
 
+### Grey
+
+| Primary | Dark    | Light    | Accent  |
+| ------- | ------- | -------- | ------- |
+| #707070 | #3B3B3B | #BABABA  | #FD7400 |
+
+![GreyTheme](./images/grey.png)
