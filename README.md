@@ -20,12 +20,27 @@ To set the main theme for your system,
 
 ![BrandingOptions](./images/brandingoptions.png)
 
+If you have set Theme Assignments, you can update those as well under `PeopleTools > Portal > Branding > Assign Branding Themes`
+
 ## SQL for Refreshes
 
 Typically, the `IO_STYLE_859` is load into production but not used. During your refresh, you can use the following SQL to configure your new environment to use a theme. 
 
 ```sql
+UPDATE sysadm.psoptions
+SET
+    ptbrandtheme = 'IO_GREEN_859_THEME',
+    themestyletype = 'PTCP';
 
+TRUNCATE TABLE sysadm.psoptionsaddl;
+
+INSERT INTO sysadm.psoptionsaddl 
+VALUES (
+    'C',
+    'CSS',
+    'IO_GREEN_859_PTCP_SS',
+    0
+);
 ```
 
 ## Colors
