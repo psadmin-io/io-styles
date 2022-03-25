@@ -1,24 +1,3 @@
-# psadmin.io 8.59 Themes
-
-We are releasing our newest version of our Themes for PeopleSoft 8.59 (and 8.58). We use these stylesheets on our non-production environments so that users can easily recognize which environment they are in, and most important, know they aren't in production.
-
-The Themes are released as an Application Data Set that you can easiliy import into your applications. The ADS project includes stylesheets and Branding Themes.
-
-## Importing
-
-Download the new themes from the Github respository here. You will find a 
-
-## Assigning Themes
-
-To set the main theme for your system, 
-
-1. Navigate to `PeopleTools > Portal > Branding > Branding System Options`
-1. Select the `IO_` theme of your choice.
-1. You will also need to add a stylesheet for Classic Plus. Add the cooresponding `IO_<color>_859_PTCP_SS` as an additional stylesheet.
-
-![BrandingOptions](./images/brandingoptions.png)
-
-
 ## Orange
 
 ![OrangeTheme](./images/orange.png)

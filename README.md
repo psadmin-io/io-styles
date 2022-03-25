@@ -20,7 +20,7 @@ To set the main theme for your system,
 
 ![BrandingOptions](./images/brandingoptions.png)
 
-If you have set Theme Assignments, you can update those as well under `PeopleTools > Portal > Branding > Assign Branding Themes`
+4. If you have set Theme Assignments, you can update those as well under `PeopleTools > Portal > Branding > Assign Branding Themes`
 
 ## SQL for Refreshes
 
