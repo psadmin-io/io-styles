@@ -80,7 +80,7 @@ To set the main theme for your system,
 
 ## Brown
 
-![BrownTheme](./iamges/brown.png)
+![BrownTheme](./images/brown.png)
 
 | Primary | Dark    | Light    | Accent  |
 | ------- | ------- | -------- | ------- |
