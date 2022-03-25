@@ -6,7 +6,7 @@ The Themes are released as an Application Data Set that you can easiliy import i
 
 ## Importing Themes
 
-[Download the new themes from the Github respository](https://github.com/psadmin-io/io-styles-859). Under the Releases, you can [download the lastest `IO_STYLE_859.zip`]() release. Unpack the zip file to your Data Migration File Location.
+Under the Releases, you can [download the lastest `IO_STYLE_859.zip`]() release. Unpack the zip file to your Data Migration File Location.
 
 You use the Data Migration Workbench's "Load Project From File" feature to import the themes and the stylesheets.
 
