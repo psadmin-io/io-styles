@@ -43,6 +43,30 @@ VALUES (
 );
 ```
 
+If you want to use the CompanyInfo banner element, you can enable the HTML object with this SQL and populate the database name, refresh date, and the currently logged in user.
+
+```sql
+UPDATE sysadm.ps_ptbr_lteltat
+SET
+    ptbr_attr_eb_cla = 'Y'
+WHERE
+        ptbr_layout_id = 'DEFAULT_HEADER_FLUID'
+    AND ptbr_element_id = 'CompanyInfo'
+    AND ptbr_attr_id = '.html';
+
+truncate table sysadm.ps_ptbr_ltattr_cla;
+
+INSERT INTO sysadm.ps_ptbr_ltattr_cla (
+    ptbr_attr_eb_cla,
+    ptbr_layout_id,
+    ptbr_attr_lval_cla
+) VALUES (
+    'Y',
+    'DEFAULT_HEADER_FLUID',
+    '<p><span id="ioDBName">:1 - Refreshed On :2</span> <span id="ioWelcome">:3</span></p>'
+);
+```
+
 ## Colors
 
 > I used https://colordesigner.io/ to help build the color schemes.
