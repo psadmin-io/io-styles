@@ -67,6 +67,36 @@ INSERT INTO sysadm.ps_ptbr_ltattr_cla (
 );
 ```
 
+You must also customize the `PTBR_BRANDING.UTILITY.GetCompanyInfoHtml.OnExecute` class so that it will resolve the parameters in the HTML above.
+
+```peoplecode
+
+method GetFluidBannerHtml
+   /* Delivered method here... */
+
+   /* IO_STYLE_859 Customization - Start */
+   Local string &dbName;
+   SQLExec("select LONGNAME from %Table(:1)", Record.PSOPTIONS, &dbName);
+   &BannerHtml = Substitute(&BannerHtml, ":1", &dbName);
+   
+   Local date &refreshDate;
+   SQLExec("select %DateOut(LASTREFRESHDTTM) from %Table(:1)", Record.PSSTATUS, &refreshDate);
+   &BannerHtml = Substitute(&BannerHtml, ":2", DateTimeToLocalizedString(&refreshDate, "MM/dd/yyyy"));
+   
+   Local string &firstName;
+   SQLExec("select OPRDEFNDESC from %Table(:1) where OPRID = :2", Record.PSOPRDEFN, %OperatorId, &firstName);
+   If All(&firstName) Then
+      &BannerHtml = Substitute(&BannerHtml, ":3", "User: " | &firstName | " (" | %OperatorId | ")&nbsp;");
+   Else
+      &BannerHtml = Substitute(&BannerHtml, ":3", "User: " | %OperatorId | "&nbsp;");
+   End-If;
+   /* IO_STYLE_859 Customization - End */
+
+   Return &BannerHtml;
+   
+end-method;
+```
+
 ## Colors
 
 > I used https://colordesigner.io/ to help build the color schemes.
