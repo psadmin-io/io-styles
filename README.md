@@ -97,6 +97,34 @@ method GetFluidBannerHtml
 end-method;
 ```
 
+For Classic pages, add this PeopleCode to `PTBR_BRANDING.Elements.CompanyInfoConfigurator.OnExecute`.
+
+```peoplecode
+method getHTML
+   /* Delivered method here... */
+
+   /* IO_STYLE_859 Customization - Start */
+   Local string &dbName;
+   SQLExec("select LONGNAME from %Table(:1)", Record.PSOPTIONS, &dbName);
+   &getHTML = Substitute(&getHTML, ":1", &dbName);
+   
+   Local date &refreshDate;
+   SQLExec("select %DateOut(LASTREFRESHDTTM) from %Table(:1)", Record.PSSTATUS, &refreshDate);
+   &getHTML = Substitute(&getHTML, ":2", DateTimeToLocalizedString(&refreshDate, "MM/dd/yyyy"));
+   
+   Local string &firstName;
+   SQLExec("select OPRDEFNDESC from %Table(:1) where OPRID = :2", Record.PSOPRDEFN, %OperatorId, &firstName);
+   If All(&firstName) Then
+      &getHTML = Substitute(&getHTML, ":3", "User: " | &firstName | " (" | %OperatorId | ")&nbsp;");
+   Else
+      &getHTML = Substitute(&getHTML, ":3", "User: " | %OperatorId | "&nbsp;");
+   End-If;
+   /* IO_STYLE_859 Customization - End */
+
+   Return &getHTML;
+end-method;
+```
+
 ## Colors
 
 > I used https://colordesigner.io/ to help build the color schemes.
