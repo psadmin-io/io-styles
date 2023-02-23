@@ -1054,7 +1054,7 @@
     right: -.2em;
 }
 
-/* Company Info - Welcome Message */
+/* Company Info - Welcome Message */ 
 /* https://pe0ples0ft.blogspot.com/2018/10/pt857-custom-header-CompanyInfo-4.html */
 #ioDBName {
   /* Align Welcome Message to the right */
