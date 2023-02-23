@@ -24,7 +24,7 @@ To set the main theme for your system,
 
 1. Navigate to `PeopleTools > Portal > Branding > Branding System Options`
 1. Select the `IO_` theme of your choice.
-2. You will also need to add a stylesheet for Classic Plus. Add the cooresponding `IO_<color>_860_PTCP_SS`  or ``IO_<color>_859_PTCP_SS` as an additional stylesheet.
+2. You will also need to add a stylesheet for Classic Plus. Add the cooresponding `IO_<color>_860_PTCP_SS`  or `IO_<color>_859_PTCP_SS` as an additional stylesheet.
 
 ![BrandingOptions](./images/brandingoptions.png)
 
