@@ -1,12 +1,20 @@
-# psadmin.io 8.59 Themes
+# psadmin.io Themes
 
-We are releasing our newest version of our Themes for PeopleSoft 8.59 (and 8.58). We use these stylesheets on our non-production environments so that users can easily recognize which environment they are in, and most important, know they aren't in production.
+We are releasing our newest version of our Themes for PeopleSoft 8.60, 8.59 and 8.58. We use these stylesheets on our non-production environments so that users can easily recognize which environment they are in, and most important, know they aren't in production.
 
 The Themes are released as an Application Data Set that you can easiliy import into your applications. The ADS project includes stylesheets and Branding Themes.
 
 ## Importing Themes
 
-Under the Releases, you can [download the lastest `IO_STYLE_859.zip`]() release. Unpack the zip file to your Data Migration File Location.
+### PeopleTools 8.60 
+
+For 8.60, under the Releases link on the right, you can download the latest `IO_STYLE_REDWOOD.zip`]() release. Unpack the zip file to your Data Migration File Location.
+
+You use the Data Migration Workbench's "Load Project From File" feature to import the themes and the stylesheets.
+
+### PeopleTools 8.58/8.59
+
+For 8.58 and 8.58, under the Releases link on the right, you can [download the lastest `IO_STYLE_859.zip`](https://github.com/psadmin-io/io-styles-859/releases/download/v1.1/IO_STYLES_859-v1.1.zip) release. Unpack the zip file to your Data Migration File Location.
 
 You use the Data Migration Workbench's "Load Project From File" feature to import the themes and the stylesheets.
 
@@ -16,7 +24,7 @@ To set the main theme for your system,
 
 1. Navigate to `PeopleTools > Portal > Branding > Branding System Options`
 1. Select the `IO_` theme of your choice.
-1. You will also need to add a stylesheet for Classic Plus. Add the cooresponding `IO_<color>_859_PTCP_SS` as an additional stylesheet.
+2. You will also need to add a stylesheet for Classic Plus. Add the cooresponding `IO_<color>_860_PTCP_SS`  or ``IO_<color>_859_PTCP_SS` as an additional stylesheet.
 
 ![BrandingOptions](./images/brandingoptions.png)
 
@@ -24,12 +32,12 @@ To set the main theme for your system,
 
 ## SQL for Refreshes
 
-Typically, the `IO_STYLE_859` is load into production but not used. During your refresh, you can use the following SQL to configure your new environment to use a theme. 
+Typically, the `IO_STYLE_859` or `IO_STYLE_REDWOOD` project is loaded into production but not used. During your refresh, you can use the following SQL to configure your new environment to use a theme. 
 
 ```sql
 UPDATE sysadm.psoptions
 SET
-    ptbrandtheme = 'IO_GREEN_859_THEME',
+    ptbrandtheme = 'IO_GREEN_RW_THEME',
     themestyletype = 'PTCP';
 
 TRUNCATE TABLE sysadm.psoptionsaddl;
@@ -38,10 +46,12 @@ INSERT INTO sysadm.psoptionsaddl
 VALUES (
     'C',
     'CSS',
-    'IO_GREEN_859_PTCP_SS',
+    'IO_GREEN_860_PTCP_SS',
     0
 );
 ```
+
+## CompanyInfo Banner
 
 If you want to use the CompanyInfo banner element, you can enable the HTML object with this SQL and populate the database name, refresh date, and the currently logged in user.
 
@@ -63,7 +73,7 @@ INSERT INTO sysadm.ps_ptbr_ltattr_cla (
 ) VALUES (
     'Y',
     'DEFAULT_HEADER_FLUID',
-    '<p><span id="ioDBName">:1 - Refreshed On :2</span> <span id="ioWelcome">:3</span></p>'
+    '<div style="width: 100%; height: 17px; padding-top: 3px; padding-bottom: 3px;"><div id="ioDBName">:1 - Refreshed On :2</div><div id="ioWelcome">:3</div></div>'
 );
 ```
 
@@ -125,9 +135,89 @@ method getHTML
 end-method;
 ```
 
-## Colors
+## 8.60 Colors (Redwood Themes)
 
-> I used https://colordesigner.io/ to help build the color schemes.
+### Orange
+
+| Primary | Accent  |
+| ------- | ------  |
+| #d0724f | #6E4E48 |
+
+![OrangeTheme](./images/orange-redwood.png)
+
+### Red
+
+| Primary | Accent  |
+| ------- | ------  |
+| #D63B25 | #6E3A34 |
+
+![RedTheme](./images/red-redwood.png)
+
+### Green
+
+| Primary | Accent  |
+| ------- | ------  |
+| #84AD6A | #577346 |
+
+![GreenTheme](./images/green-redwood.png)
+
+### Purple
+
+| Primary | Accent  |
+| ------- | ------  |
+| #9e648c | #6E2456 |
+
+![PurpleTheme](./images/purple-redwood.png)
+
+### Blue
+
+| Primary | Accent  |
+| ------- | ------  |
+| #1374BA | #2C526E |
+
+![BlueTheme](./images/blue-redwood.png)
+
+### Teal
+
+| Primary | Accent  |
+| ------- | ------  |
+| #60b6ab | #5B6E6B |
+
+![TealTheme](./images/teal-redwood.png)
+
+### Yellow
+
+| Primary | Accent  |
+| ------- | ------  |
+| #F0CC71 | #6E6754 |
+
+![YellowTheme](./images/yellow-redwood.png)
+
+### Brown
+
+| Primary | Accent  |
+| ------- | ------  |
+| #BA9050 | #6E552F |
+
+![BrownTheme](./images/brown-redwood.png)
+
+### Pink
+
+| Primary | Accent  |
+| ------- | ------  |
+| #ca89ad | #6B294D |
+
+![PinkTheme](./images/pink-redwood.png)
+
+### Grey
+
+| Primary | Accent  |
+| ------- | ------  |
+| #C9C3BD | #9E9995 |
+
+![GreyTheme](./images/grey-redwood.png)
+
+## 8.58/8.59 Colors
 
 ### Orange
 
