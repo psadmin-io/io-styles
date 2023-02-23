@@ -8,7 +8,7 @@ The Themes are released as an Application Data Set that you can easiliy import i
 
 ### PeopleTools 8.60 
 
-For 8.60, under the Releases link on the right, you can download the latest `IO_STYLE_REDWOOD.zip`]() release. Unpack the zip file to your Data Migration File Location.
+For 8.60, under the Releases link on the right, you can [download the latest `IO_STYLE_REDWOOD.zip`](https://github.com/psadmin-io/io-styles/releases/download/v1.2/IO_STYLE_REDWOOD.zip) release. Unpack the zip file to your Data Migration File Location.
 
 You use the Data Migration Workbench's "Load Project From File" feature to import the themes and the stylesheets.
 
