@@ -15,6 +15,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -53,6 +57,10 @@
 :root {
   --pt-banner-background-color: #d0724f; /* Primary */
   --pt-border-contrast-color: #6E4C3F; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -123,6 +131,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -161,6 +173,10 @@
 :root {
   --pt-banner-background-color: #D63B25; /* Primary */
   --pt-border-contrast-color: #6E3A34; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -231,6 +247,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -269,6 +289,10 @@
 :root {
   --pt-banner-background-color: #84AD6A; /* Primary */
   --pt-border-contrast-color: #577346; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -339,6 +363,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -376,6 +404,10 @@
 :root {
   --pt-banner-background-color: #9e648c; /* Primary */
   --pt-border-contrast-color: #6E2456; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -446,6 +478,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -484,6 +520,10 @@
 :root {
   --pt-banner-background-color: #1374BA; /* Primary */
   --pt-border-contrast-color: #2C526E; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -554,6 +594,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -592,6 +636,10 @@
 :root {
   --pt-banner-background-color: #60B6AB; /* Primary */
   --pt-border-contrast-color: #5B6E6B; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -662,6 +710,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -700,6 +752,10 @@
 :root {
   --pt-banner-background-color: #F0CC71; /* Primary */
   --pt-border-contrast-color: #6E6754; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -770,6 +826,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -808,6 +868,10 @@
 :root {
   --pt-banner-background-color: #BA9050; /* Primary */
   --pt-border-contrast-color: #6E552F; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -878,6 +942,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -916,6 +984,10 @@
 :root {
   --pt-banner-background-color: #ca89ad; /* Primary */
   --pt-border-contrast-color: #6B294D; /* Dark */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
@@ -986,6 +1058,10 @@
   --pt-strip-height: 0px;
 }
 
+:root.psc_form-small {
+  --pt-strip-height: 0px;
+}
+
 /* JSMPros - https://www.youtube.com/watch?v=FuHJTVgw5fU */
 /* Fluid Notifications */
 #PT_HEADER .psc_confirmation-animate {
@@ -1024,6 +1100,10 @@
 :root {
   --pt-banner-background-color: #C9C3BD; /* Primary */
   --pt-border-contrast-color: #9E9995; /* Accent */
+  --pt-strip-height: 0px;
+}
+
+:root.psc_form-small {
   --pt-strip-height: 0px;
 }
 
